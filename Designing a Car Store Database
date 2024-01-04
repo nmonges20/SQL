@@ -1,0 +1,31 @@
+CREATE TABLE cars (id INTEGER PRIMARY KEY, model TEXT, quantity INTEGER, price INTEGER, quality TEXT); 
+
+INSERT INTO cars VALUES (1, "A", 15, 20000, "good");
+INSERT INTO cars VALUES (2, "B", 20, 25000, "good");
+INSERT INTO cars VALUES (3, "C", 17, 22000, "good");
+INSERT INTO cars VALUES (4, "D", 10, 30000, "good");
+INSERT INTO cars VALUES (5, "E", 12, 21000, "good");
+INSERT INTO cars VALUES (6, "A", 20, 15000, "normal");
+INSERT INTO cars VALUES (7, "B", 18, 18000, "normal");
+INSERT INTO cars VALUES (8, "C", 12, 14000, "normal");
+INSERT INTO cars VALUES (9, "D", 9, 13000, "normal");
+INSERT INTO cars VALUES (10, "E", 11, 16000, "normal");
+INSERT INTO cars VALUES (11, "A", 5, 9000, "bad");
+INSERT INTO cars VALUES (12, "B", 8, 6000, "bad");
+INSERT INTO cars VALUES (13, "C", 5, 5000, "bad");
+INSERT INTO cars VALUES (14, "D", 10, 7000, "bad");
+INSERT INTO cars VALUES (15, "E", 6, 4500, "bad");
+
+
+#Use a SELECT statement to order the values in descending order by price.
+SELECT * FROM cars ORDER BY price desc;
+
+CREATE TABLE country (model TEXT PRIMARY KEY, country TEXT);
+INSERT INTO country VALUES ("A", "China");
+INSERT INTO country VALUES ("B", "United States");
+INSERT INTO country VALUES ("C", "United Kingdom");
+INSERT INTO country VALUES ("D", "Japan");
+INSERT INTO country VALUES ("E", "France");
+
+#Use a SELECT statement to order the model of cars by country of origin.
+SELECT * FROM country;
